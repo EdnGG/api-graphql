@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -e js,graphql index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard",
+    "lint-fix": "standard --fix"
   },
   "keywords": [],
   "author": "Eden Gress <gresseden@gmail.com> (https://www.facebook.com/liledn.mexikn)",
@@ -14,9 +16,13 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
-    "graphql": "^15.2.0"
+    "graphql": "^15.2.0",
+    "graphql-tools": "^6.0.12",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.21"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "standard": "^14.3.4"
   }
 }
